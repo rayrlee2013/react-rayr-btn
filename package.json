@@ -1,0 +1,52 @@
+{
+    "name": "react-block-demo",
+    "version": "0.0.1",
+    "description": "Simple react.js component for a inline progress indicator",
+    "main": "src/index.js",
+    "jsnext:main": "src/index.js",
+    "files": [
+        "lib",
+        "src",
+        "react-block-demo.css"
+    ],
+    "dependencies": {
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "prop-types": "^15.6.0",
+        "create-react-class": "^15.6.2"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "babel-preset-stage-1": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "babel-preset-stage-3": "^6.24.1",
+        "gulp": "^3.9.1",
+        "gulp-load-plugins": "^1.5.0",
+        "webpack": "^3.10.0",
+        "webpack-stream": "^4.0.0"
+    },
+    "scripts": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rayrlee2013/react-block-demo"
+    },
+    "keywords": [
+        "react",
+        "progress",
+        "button",
+        "component",
+        "javascript",
+        "react-component"
+    ],
+    "author": "Rayr Lee",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rayrlee2013/react-block-demo/issues"
+    },
+    "homepage": "https://github.com/rayrlee2013/react-block-demo"
+}
