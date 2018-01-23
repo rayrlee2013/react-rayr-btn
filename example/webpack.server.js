@@ -57,7 +57,6 @@ proxyOptions.forEach((option) => {
     });
 });
 
-console.log(compiler.outputPath);
 
 app.get('*', (req, res, next) => {
     const filename = path.join(compiler.outputPath, 'index.html');
@@ -73,6 +72,7 @@ app.get('*', (req, res, next) => {
 });
 
 let server = http.createServer(app);
+
 if (urlParts.protocol === 'https:') {
     server = https.createServer({
         key: fs.readFileSync(path.join(__dirname, 'key.pem')),

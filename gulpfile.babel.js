@@ -8,6 +8,7 @@ import postcss from 'gulp-postcss';
 import concat from 'gulp-concat';
 import runSequence from 'run-sequence';
 import pkg from './package.json';
+
 import webpackConfig from './webpack.config';
 import exampleWebpackConfig from './example/webpack.config.babel';
 
@@ -49,6 +50,7 @@ gulp.task('build:lib', (done) => {
     );
 });
 
+//demo example
 gulp.task('build:example:clean', () => {
     del.sync(['example/dist']);
 });

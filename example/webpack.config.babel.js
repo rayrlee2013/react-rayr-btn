@@ -52,21 +52,17 @@ const webpackConfig = {
             },
             {
                 test: /\.css$/,
-                use: !HOT
-                    ? ExtractTextWebpackPlugin.extract({
-                        fallback: 'style-loader',
-                        use: ['css-loader', 'postcss-loader']
-                    })
-                    : ['style-loader', 'css-loader', 'postcss-loader']
+                use: !HOT ? ExtractTextWebpackPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'postcss-loader']
+                }) : ['style-loader', 'css-loader', 'postcss-loader']
             },
             {
                 test: /\.scss$/,
-                use: !HOT
-                    ? ExtractTextWebpackPlugin.extract({
-                        fallback: 'style-loader',
-                        use: ['css-loader', 'postcss-loader', sassLoader]
-                    })
-                    : ['style-loader', 'css-loader', 'postcss-loader', sassLoader]
+                use: !HOT ? ExtractTextWebpackPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'postcss-loader', sassLoader]
+                }) : ['style-loader', 'css-loader', 'postcss-loader', sassLoader]
             },
             {
                 test: /\.(png|jpg|gif|swf)$/,

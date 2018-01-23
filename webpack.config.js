@@ -12,7 +12,7 @@ const webpackConfig = {
         libraryTarget: 'umd'
     },
     externals: {
-        react: {
+        'react': {
             root: 'React',
             commonjs: 'react',
             commonjs2: 'react',
@@ -33,19 +33,6 @@ const webpackConfig = {
     },
     module: {
         rules: [
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'eslint-loader',
-                    options: {
-                        configFile: path.join(__dirname, '.eslintrc'),
-                        failOnError: true,
-                        emitError: true
-                    }
-                },
-                enforce: 'pre'
-            },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
