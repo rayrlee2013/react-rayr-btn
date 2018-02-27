@@ -7,7 +7,24 @@ import {RayrBtn} from 'react-rayr-btn';
 
 function App() {
     return (
-        <h1>组件脚手架测试 <RayrBtn/></h1>
+        <div>
+            <h1>按钮组件</h1>
+            <div>
+                <RayrBtn type={'primary'}>主按钮</RayrBtn>
+                <RayrBtn type={'primary'}>主按钮</RayrBtn>
+                <RayrBtn type={'primary'} disabled={true}>主按钮</RayrBtn>
+            </div>
+            <div>
+                <RayrBtn>次按钮</RayrBtn>
+                <RayrBtn>次按钮</RayrBtn>
+                <RayrBtn disabled={true}>次按钮</RayrBtn>
+            </div>
+            <div>
+                <RayrBtn type={'primary'} size={'sm'}>主按钮</RayrBtn>
+                <RayrBtn type={'primary'} size={'sm'}>主按钮</RayrBtn>
+                <RayrBtn type={'primary'} size={'sm'} disabled={true}>主按钮</RayrBtn>
+            </div>
+        </div>
     )
 }
 

@@ -4,16 +4,31 @@ import classnames from 'classnames';
 
 class RayrBtn extends React.Component {
     static propTypes = {
-        type: PropTypes.oneOf(['info', 'success', 'warning', 'error'])
+        type: PropTypes.oneOf(['primary', 'default']),
+        disabled: PropTypes.oneOf([true, false]),
+        size: PropTypes.oneOf(['md', 'lg', 'sm'])
     };
 
     static defaultProps = {
-        type: 'info'
+        type: 'default',
+        disabled: false,
+        size: 'md'
     };
 
     render() {
+
+        let _classType = this.props.type !== 'default' ? `rayr-btn-${this.props.type}` : '',
+            _classSize = this.props.type !== 'default' ? `rayr-btn-${this.props.size}` : '';
+
+
+        let _class = `rayr-btn ${_classType} ${_classSize}`;
+
+
         return (
-            <button className="rayr-btn">rayr-btn</button>
+            <button
+                disabled={this.props.disabled}
+                className={_class}>{this.props.children}
+            </button>
         );
     }
 }
