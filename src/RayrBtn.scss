@@ -32,6 +32,17 @@
     }
 }
 
+.rayr-btn-danger {
+    background-color: #FF8F4B;
+    color: #fff;
+    border: 1px solid #FF8F4B;
+    &:active {
+        border-color: #FFAF7E;
+        color: #fff;
+        background-color: #FFAF7E;
+    }
+}
+
 //尺寸
 
 .rayr-btn-sm {
