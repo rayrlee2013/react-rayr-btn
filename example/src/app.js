@@ -13,7 +13,10 @@ function App() {
             <div className={'item'}>
                 <div className={'title'}>Primary Button</div>
                 <RayrBtn type={'primary'}>常态</RayrBtn>
-                <RayrBtn type={'primary'}>点击我</RayrBtn>
+                <RayrBtn type={'primary'} onClick={(e) => {
+                    console.log(e);
+                    alert('hello!')
+                }}>点击我</RayrBtn>
                 <RayrBtn type={'primary'} disabled={true}>禁用</RayrBtn>
             </div>
             <div className={'item'}>
@@ -38,7 +41,7 @@ function App() {
                 <div className={'title'}>small Button</div>
                 <RayrBtn type={'danger'} size={'sm'}>主按钮</RayrBtn>
                 <RayrBtn type={'danger'} size={'sm'}>点击我</RayrBtn>
-                <RayrBtn type={'primary'} size={'sm'} disabled={true}>主按钮</RayrBtn>
+                <RayrBtn type={'danger'} size={'sm'} disabled={true}>主按钮</RayrBtn>
             </div>
             <div className={'item'}>
                 <div className={'title'}>small Button</div>
